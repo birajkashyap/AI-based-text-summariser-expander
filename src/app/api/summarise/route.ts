@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          model: "mixtral-8x7b-32768",
+          model: "llama3-8b-8192",
           messages: [{ role: "user", content: text }],
           temperature: 0.7, // Set temperature dynamically if needed
         }),
